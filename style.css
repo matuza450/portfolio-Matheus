@@ -118,6 +118,8 @@ section .subtitle {
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
 }
 
 .project-card:hover {
@@ -298,4 +300,10 @@ footer {
     border-radius: 4px;
     /* Animação suave quando a página carrega ou o valor muda */
     transition: width 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.project-card video {
+    width: 100%;
+    height: auto;
+    display: block;
 }
