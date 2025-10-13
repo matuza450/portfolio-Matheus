@@ -307,3 +307,27 @@ footer {
     height: auto;
     display: block;
 }
+
+
+/* CORES DA HABILIDADES
+
+
+/* Cor para o 1º, 5º, 9º... balão de cada lista */
+.skills-list span:nth-child(4n + 1) {
+    background-color: #7f20ce; /* Roxo */
+}
+
+/* Cor para o 2º, 6º, 10º... balão de cada lista */
+.skills-list span:nth-child(4n + 2) {
+    background-color: #456688; /* Azul */
+}
+
+/* Cor para o 3º, 7º, 11º... balão de cada lista */
+.skills-list span:nth-child(4n + 3) {
+    background-color: #190e47; /* Azul Escuro */
+}
+
+/* Cor para o 4º, 8º, 12º... balão de cada lista */
+.skills-list span:nth-child(4n + 4) {
+    background-color: #1e5ac9; /* Verde */
+}
