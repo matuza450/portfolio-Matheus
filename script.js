@@ -30,7 +30,7 @@ function openSkillTab(evt, tabName) {
     evt.currentTarget.classList.add('active');
 }
 
-// --- CONFIGURAÇÃO INICIAL E ANIMAÇÃO ---
+// --- CONFIGURAÇÃO INICIAL AO CARREGAR A PÁGINA ---
 document.addEventListener("DOMContentLoaded", function() {
     // Garante que a primeira aba de projetos esteja ativa
     const webTab = document.getElementById("web");
@@ -42,11 +42,5 @@ document.addEventListener("DOMContentLoaded", function() {
     const devTab = document.getElementById("desenvolvimento");
     if (devTab) {
         devTab.classList.add('active');
-    }
-
-    // Lógica para a animação do título
-    const headline = document.getElementById("headline");
-    if (headline) {
-        // A animação é controlada via CSS, não precisa de JS extra.
     }
 });
