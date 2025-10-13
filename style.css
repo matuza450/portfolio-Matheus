@@ -10,7 +10,7 @@
     --bg-color: #121212; /* Fundo escuro */
     --primary-text-color: #E0E0E0; /* Texto principal claro */
     --secondary-text-color: #A0A0A0; /* Texto secundário/cinza */
-    --accent-color: #007BFF; /* Cor de destaque (links, botões) */
+    --accent-color: #00ff6a; /* Cor de destaque (links, botões) */
     --card-bg-color: #1E1E1E; /* Fundo dos cards */
     
     /* Fontes */
@@ -235,7 +235,7 @@ section .subtitle {
     transform: translateY(-4px);
     background-color: var(--accent-color);
     color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2); /* Brilho subtil azul */
+    box-shadow: 0 10px 20px rgba(11, 209, 11, 0.2); /* Brilho subtil azul */
 }
 
 .contact-button i {
@@ -356,22 +356,22 @@ footer {
 
 /* Cor para o 1º, 5º, 9º... balão de cada lista */
 .skills-list span:nth-child(4n + 1) {
-    background-color: #003af7; /* Roxo */
+    background-color: #086436; /* Roxo */
 }
 
 /* Cor para o 2º, 6º, 10º... balão de cada lista */
 .skills-list span:nth-child(4n + 2) {
-    background-color: #244488; /* Azul */
+    background-color: #0a5717; /* Azul */
 }
 
 /* Cor para o 3º, 7º, 11º... balão de cada lista */
 .skills-list span:nth-child(4n + 3) {
-    background-color: #14606d; /* Azul Escuro */
+    background-color: #0f6d36; /* Azul Escuro */
 }
 
 /* Cor para o 4º, 8º, 12º... balão de cada lista */
 .skills-list span:nth-child(4n + 4) {
-    background-color: #0084ff; /* Verde */
+    background-color: #0c5719; /* Verde */
 }
 
 
@@ -489,7 +489,7 @@ footer {
 }
 
 .cta-button:hover {
-    background-color: #0056b3; /* Um tom mais escuro do azul para o hover */
+    background-color: #0dbb64; /* Um tom mais escuro do azul para o hover */
     transform: translateY(-2px);
 }
 
@@ -538,12 +538,12 @@ footer {
 
 .service-card:hover {
     transform: translateY(-8px); /* Efeito de elevação sutil */
-    border-left-color: #2c41ff; /* Borda de destaque aparece no hover */
+    border-left-color: #0f7944; /* Borda de destaque aparece no hover */
 }
 
 .service-icon {
     font-size: 2.5rem; /* Tamanho do ícone */
-    color: #0026ff; /* Cor de destaque para o ícone */
+    color: #134d2d; /* Cor de destaque para o ícone */
     margin-bottom: 1.5rem;
 }
 
@@ -593,7 +593,7 @@ footer {
 
 .skill-tab-link.active {
     color: #121212;
-    background-color: #0084ff; /* Usando um amarelo vibrante para destaque */
+    background-color: #196636; /* Usando um amarelo vibrante para destaque */
 }
 
 .skill-tab-link:not(.active):hover {
