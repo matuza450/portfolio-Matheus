@@ -325,22 +325,22 @@ footer {
 
 /* Cor para o 1º, 5º, 9º... balão de cada lista */
 .skills-list span:nth-child(4n + 1) {
-    background-color: #4d2c68; /* Roxo */
+    background-color: #003af7; /* Roxo */
 }
 
 /* Cor para o 2º, 6º, 10º... balão de cada lista */
 .skills-list span:nth-child(4n + 2) {
-    background-color: #520661; /* Azul */
+    background-color: #244488; /* Azul */
 }
 
 /* Cor para o 3º, 7º, 11º... balão de cada lista */
 .skills-list span:nth-child(4n + 3) {
-    background-color: #75397a; /* Azul Escuro */
+    background-color: #14606d; /* Azul Escuro */
 }
 
 /* Cor para o 4º, 8º, 12º... balão de cada lista */
 .skills-list span:nth-child(4n + 4) {
-    background-color: #460c3c; /* Verde */
+    background-color: #0084ff; /* Verde */
 }
 
 
@@ -484,7 +484,7 @@ footer {
     transform: translateX(-50%);
     width: 70px; /* Largura da linha */
     height: 4px; /* Espessura da linha */
-    background-color: #FFD700; /* Um tom de amarelo/dourado */
+    background-color: #00ffea; /* Um tom de amarelo/dourado */
     border-radius: 2px;
 }
 
@@ -507,12 +507,12 @@ footer {
 
 .service-card:hover {
     transform: translateY(-8px); /* Efeito de elevação sutil */
-    border-left-color: #FFD700; /* Borda de destaque aparece no hover */
+    border-left-color: #2c41ff; /* Borda de destaque aparece no hover */
 }
 
 .service-icon {
     font-size: 2.5rem; /* Tamanho do ícone */
-    color: #FFD700; /* Cor de destaque para o ícone */
+    color: #0026ff; /* Cor de destaque para o ícone */
     margin-bottom: 1.5rem;
 }
 
@@ -562,7 +562,7 @@ footer {
 
 .skill-tab-link.active {
     color: #121212;
-    background-color: #FFD700; /* Usando um amarelo vibrante para destaque */
+    background-color: #0084ff; /* Usando um amarelo vibrante para destaque */
 }
 
 .skill-tab-link:not(.active):hover {

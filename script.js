@@ -1,4 +1,4 @@
-// --- CONTROLE DAS ABAS DE PROJETOS ---
+// --- CONTROLO DAS ABAS DE PROJECTOS ---
 function openTab(evt, tabName) {
     const tabContents = document.querySelectorAll("#projetos .tab-content");
     tabContents.forEach(content => {
@@ -14,7 +14,7 @@ function openTab(evt, tabName) {
     evt.currentTarget.classList.add('active');
 }
 
-// --- CONTROLE DAS ABAS DE HABILIDADES ---
+// --- CONTROLO DAS ABAS DE HABILIDADES ---
 function openSkillTab(evt, tabName) {
     const tabContents = document.querySelectorAll("#habilidades .skill-tab-content");
     tabContents.forEach(content => {
@@ -32,13 +32,13 @@ function openSkillTab(evt, tabName) {
 
 // --- CONFIGURAÇÃO INICIAL AO CARREGAR A PÁGINA ---
 document.addEventListener("DOMContentLoaded", function() {
-    // Garante que a primeira aba de projetos esteja ativa
+    // Garante que a primeira aba de projectos esteja activa
     const webTab = document.getElementById("web");
     if (webTab) {
         webTab.classList.add('active');
     }
 
-    // Garante que a primeira aba de habilidades esteja ativa
+    // Garante que a primeira aba de habilidades esteja activa
     const devTab = document.getElementById("desenvolvimento");
     if (devTab) {
         devTab.classList.add('active');
