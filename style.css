@@ -165,50 +165,81 @@ section .subtitle {
 
 .skills-list span {
     background-color: var(--card-bg-color);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    padding: 0.7rem 1.3rem; /* Aumentado para mais espaço */
+    border-radius: 25px;   /* Aumentado para manter a forma arredondada */
+    font-size: 1rem;       /* Aumentado para texto e ícone maiores */
     font-weight: 300;
-    
-    /* Linhas adicionadas para alinhar o ícone e o texto */
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem; /* Espaço entre o ícone e o texto */
+    gap: 0.6rem;           /* Aumentado para mais espaço entre ícone e texto */
     transition: transform 0.2s ease;
 }
-
 
 .skills-list span:hover {
     transform: translateY(-3px);
 }
 
-/* --- SEÇÃO DE CONTATO --- */
+
+
+/* --- SECÇÃO DE CONTATO ATUALIZADA --- */
+#contato {
+    background-color: #1a1a1a; /* Fundo ligeiramente diferente para destacar o cartão */
+    padding: 6rem 0;
+}
+
+.contact-box {
+    background-color: var(--card-bg-color);
+    padding: 3rem;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid #2a2a2a;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
 #contato p {
-    max-width: 600px;
-    margin: 0 auto 1.5rem;
-}
-
-.link-contato {
-    display: inline-flex; /* Alinha o ícone e o texto */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 0.7rem; /* Espaço entre o ícone e o texto */
-    
-    text-decoration: none;
-    color: var(--accent-color);
+    color: var(--secondary-text-color);
     font-size: 1.1rem;
-    font-weight: 500;
-    
-    margin-right: 1.5rem; /* Adiciona um espaço entre os links */
-    margin-top: 1rem; /* Adiciona um espaço acima, separando do parágrafo */
-    transition: color 0.3s ease;
+    max-width: 500px;
+    margin: 0 auto 2.5rem; /* Adiciona mais espaço abaixo do parágrafo */
+    line-height: 1.8;
 }
 
-.link-contato:hover {
+.contact-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Para que os botões se ajustem em telas menores */
+}
+
+.contact-button {
+    background-color: #2a2a2a;
     color: var(--primary-text-color);
+    padding: 1rem 2rem;
+    border-radius: 50px; /* Forma de pílula */
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    border: 1px solid #444;
 }
 
-.link-contato i {
-    font-size: 1.5rem; /* Tamanho do ícone */
+.contact-button:hover {
+    transform: translateY(-4px);
+    background-color: var(--accent-color);
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2); /* Brilho subtil azul */
+}
+
+.contact-button i {
+    font-size: 1.2rem;
 }
 
 /* --- RODAPÉ --- */
