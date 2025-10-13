@@ -314,20 +314,139 @@ footer {
 
 /* Cor para o 1º, 5º, 9º... balão de cada lista */
 .skills-list span:nth-child(4n + 1) {
-    background-color: #7f20ce; /* Roxo */
+    background-color: #4d2c68; /* Roxo */
 }
 
 /* Cor para o 2º, 6º, 10º... balão de cada lista */
 .skills-list span:nth-child(4n + 2) {
-    background-color: #456688; /* Azul */
+    background-color: #520661; /* Azul */
 }
 
 /* Cor para o 3º, 7º, 11º... balão de cada lista */
 .skills-list span:nth-child(4n + 3) {
-    background-color: #190e47; /* Azul Escuro */
+    background-color: #75397a; /* Azul Escuro */
 }
 
 /* Cor para o 4º, 8º, 12º... balão de cada lista */
 .skills-list span:nth-child(4n + 4) {
-    background-color: #1e5ac9; /* Verde */
+    background-color: #460c3c; /* Verde */
+}
+
+
+/* --- ESTILOS PARA AS ABAS DE PROJETOS --- */
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.tab-link {
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: var(--secondary-text-color);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: var(--font-family);
+    font-weight: 600;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.tab-link:hover {
+    color: var(--primary-text-color);
+}
+
+.tab-link.active {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.6s;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* --- AJUSTE NOS CARDS DE PROJETO (OPCIONAL, MAS RECOMENDADO) --- */
+.project-card img,
+.project-card video {
+    height: 220px; 
+    object-fit: cover;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ADICIONE ISTO AO FINAL DO SEU CSS */
+
+/* --- SEÇÃO "SOBRE" ATUALIZADA --- */
+#sobre .container {
+    text-align: left; /* Alinha o texto à esquerda para um look mais profissional */
+    max-width: 800px; /* Limita a largura para melhor legibilidade */
+}
+
+#sobre h2 {
+    font-size: 2.8rem; /* Aumenta o tamanho do título */
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Efeito de cursor piscando para o título */
+#headline {
+    border-right: 3px solid var(--accent-color);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 3s steps(30, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Animação do cursor */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--accent-color); }
+}
+
+#sobre .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Destaque para palavras-chave */
+.highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.sobre-links {
+    margin-top: 2rem;
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Um tom mais escuro do azul para o hover */
+    transform: translateY(-2px);
 }

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matheus Henrique | Desenvolvedor Front-End</title>
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -36,38 +38,70 @@
     </header>
 
     <main>
-        <section id="sobre">
-            <div class="container">
-                <h2>Olá, Meu nome é Matheus Henrique</h2>
-                <p class="subtitle">Desenvolvedor web Fullstack, apaixonado por Python e Design gráfico e edição de vídeo. </p>
-                <p>Tenho contato com linguagem de programação desde 2014, minha maior paixão é Cibersegurança e a
-                    automação de sistemas. Desenvolvo Design Gráfico ÚNICOS e edições de vídeos impactantes e imersivas há gosto do cliente </p>
+<section id="sobre">
+    <div class="container">
+        <div class="sobre-content">
+            <h2 id="headline">Olá, eu sou o Matheus Henrique</h2>
+            <p class="subtitle">
+                Desenvolvedor Fullstack focado em criar soluções digitais, da concepção ao deploy.
+            </p>
+            <p>
+                Minha jornada na programação começou em 2014, e desde então minha paixão é resolver problemas complexos através de <span class="highlight">Cibersegurança</span> e <span class="highlight">automação de sistemas</span>. Também transformo ideias em realidade com <span class="highlight">Design Gráfico</span> e edições de vídeo impactantes.
+            </p>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
+<section id="projetos">
+    <div class="container">
+        <h2>Meus Projetos</h2>
+        
+        <div class="tabs-container">
+            <button class="tab-link active" onclick="openTab(event, 'web')">Projetos Web</button>
+            <button class="tab-link" onclick="openTab(event, 'design')">Projetos de Design</button>
+        </div>
 
-        <section id="projetos">
-            <div class="container">
-                <h2>Meus Projetos</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <video autoplay loop muted playsinline src="midia/hacking-etico.mp4">
-                            Seu navegador não suporta o elemento do vídeo.
-                        </video>
-                        <h3>Hacking Ético</h3>
-                        <p>Projeto que destaca minhas habilidades de Cibersegurança e minhas habilidades em CSS</p>
-                        <div class="project-links">
-                            <a href="https://hacking-etico.netlify.app/" target="_blank">Ver Demo</a>
-                            <a href="https://github.com/matuza450/sitehacking" target="_blank">Código no GitHub</a>
-                        </div>
-                        
+        <div id="web" class="tab-content active">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <video autoplay loop muted playsinline src="midia/hacking-etico.mp4">
+                        Seu navegador não suporta o elemento do vídeo.
+                    </video>
+                    <h3>Hacking Ético</h3>
+                    <p>Projeto que destaca minhas habilidades de Cibersegurança e minhas habilidades em CSS</p>
+                    <div class="project-links">
+                        <a href="https://hacking-etico.netlify.app/" target="_blank">Ver Demo</a>
+                        <a href="https://github.com/matuza450/sitehacking" target="_blank">Código no GitHub</a>
                     </div>
                 </div>
+                </div>
+        </div>
 
-            </div>
-            </div>
-        </section>
-
+        <div id="design" class="tab-content">
+            <div class="projects-grid">
+                <div class="project-card">
+                   <img src="https://placehold.co/600x400/1E1E1E/FFFFFF?text=Logo+Exemplo" alt="Logo Exemplo">
+                    <h3>Logo para Empresa XPTO</h3>
+                    <p>Criação de identidade visual para uma startup de tecnologia, focando em modernidade.</p>
+                     <div class="project-links">
+                        <a href="#" target="_blank">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <video autoplay loop muted playsinline src="https://placehold.co/600x400/000000/FFFFFF/mp4?text=Animação+Exemplo">
+                        Seu navegador não suporta o elemento do vídeo.
+                    </video>
+                    <h3>Vídeo Promocional</h3>
+                    <p>Animação criada para a campanha de marketing de um produto digital.</p>
+                     <div class="project-links">
+                        <a href="#" target="_blank">Assistir no YouTube</a>
+                    </div>
+                </div>
+                 </div>
+        </div>
+    </div>
+</section>
         <section id="formacao">
             <div class="container">
                 <h2>Formação Acadêmica</h2>
@@ -122,82 +156,77 @@
             </div>
         </section>
 
-        <section id="habilidades">
-            <div class="container">
-                <h2>Habilidades</h2>
-                <h3>Frontend</h3><br>
-                <div class="skills-list">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>Ruby on Rails</span>
-                    <span>Flutter</span>
+  <section id="habilidades">
+    <div class="container">
+        <h2>Habilidades</h2>
+        
+        <h3>Frontend</h3><br>
+        <div class="skills-list">
+            <span><i class="devicon-html5-plain"></i> HTML5</span>
+            <span><i class="devicon-css3-plain"></i> CSS3</span>
+            <span><i class="devicon-rails-plain"></i> Ruby on Rails</span>
+            <span><i class="devicon-flutter-plain"></i> Flutter</span>
+        </div>
+        <br><br>
 
-                </div>
-            </div><br><br>
-            <h3>Backend</h3><br>
-            <div class="skills-list">
-                <span>Ruby on Rails</span>
-                <span>Node.js</span>
-                <span>React</span>
-                <span>Git</span>
-                <span>JavaScript</span>
-                <span>Python</span>
-                <span>PHP</span>
-            </div><br><br>
+        <h3>Backend</h3><br>
+        <div class="skills-list">
+            <span><i class="devicon-rails-plain"></i> Ruby on Rails</span>
+            <span><i class="devicon-nodejs-plain"></i> Node.js</span>
+            <span><i class="devicon-react-original"></i> React</span>
+            <span><i class="devicon-git-plain"></i> Git</span>
+            <span><i class="devicon-javascript-plain"></i> JavaScript</span>
+            <span><i class="devicon-python-plain"></i> Python</span>
+            <span><i class="devicon-php-plain"></i> PHP</span>
+        </div>
+        <br><br>
 
-                <h3>Edição de imagens/vídeos</h3><br>
-                <div class="skills-list">
-                    <span>Adobe Photoshop</span>
-                    <span>Adobe After Effects</span>
-                    <span>Figma</span>
-                    <span>Capcut</span>
-                    <span>Canva</span>
-                    <span>Filmora</span>
-                    <span>Sony Vegas</span>
+        <h3>Edição de imagens/vídeos</h3><br>
+        <div class="skills-list">
+            <span><i class="devicon-photoshop-plain"></i> Adobe Photoshop</span>
+            <span><i class="devicon-aftereffects-plain"></i> Adobe After Effects</span>
+            <span><i class="devicon-figma-plain"></i> Figma</span>
+            <span><i class="fa-solid fa-film"></i> Capcut</span>
+            <span><i class="fa-solid fa-palette"></i> Canva</span>
+            <span><i class="fa-solid fa-video"></i> Filmora</span>
+            <span><i class="fa-solid fa-photo-film"></i> Sony Vegas</span>
+        </div>
+        <br><br>
 
-                </div><br><br>
+        <h3>Banco de Dados</h3><br>
+        <div class="skills-list">
+            <span><i class="devicon-mongodb-plain"></i> MongoDB</span>
+            <span><i class="devicon-mysql-plain"></i> MySQL</span>
+        </div>
+        <br><br>
 
+        <h3>Outras Linguagens</h3><br>
+        <div class="skills-list">
+            <span><i class="devicon-c-plain"></i> C</span>
+            <span><i class="devicon-cplusplus-plain"></i> C++</span>
+            <span><i class="devicon-java-plain"></i> Java</span>
+        </div>
+        <br><br>
 
-                <h3>Banco de Dados</h3><br>
-                <div class="skills-list">
-                    <span>MongoDB</span>
-                    <span>MySQL</span>
+        <h3>Habilidades relevantes</h3><br>
+        <div class="skills-list">
+            <span><i class="fa-solid fa-server"></i> Servidores de Minecraft</span>
+            <span><i class="fa-solid fa-robot"></i> Scripts de automação</span>
+            <span><i class="fa-solid fa-shield-halved"></i> Conhecimento em criptografia</span>
+            <span><i class="fa-solid fa-database"></i> Ánalise de Bancos de Dados</span>
+            <span><i class="fa-solid fa-handshake"></i> Profissionalismo</span>
+        </div>
+        <br><br>
 
-                </div><br><br>
-
-
-                <h3>Outras Linguagens</h3><br>
-                <div class="skills-list">
-                    <span>C</span>
-                    <span>C++</span>
-                    <span>Java</span>
-                </div><br><br>
-
-                <h3>Habilidades relevantes</h3><br>
-                <div class="skills-list">
-                    <span>Criação de Servidores de Minecraft</span>
-                    <span>Criação de Scripts de automação para diversas áreas</span>
-                    <span>Conhecimento em criptografia</span>
-                    <span>Ánalise de grandes Bancos de Dados</span>
-                    <span>Profissionalismo e confibialidade</span>
-                </div><br><br>
-
-
-                <h3>Ferramentas dominadas</h3><br>
-                <div class="skills-list">
-                    <span>Burp Suite</span>
-                    <span>Wireshark</span>
-                    <span>Powershell</span>
-                    <span>N8N</span>
-                    
-
-
-                </div>
-
-
-
-        </section>
-
+        <h3>Ferramentas dominadas</h3><br>
+        <div class="skills-list">
+            <span><i class="fa-solid fa-bug"></i> Burp Suite</span>
+            <span><i class="fa-solid fa-shuffle"></i> Wireshark</span>
+            <span><i class="fa-solid fa-terminal"></i> Powershell</span>
+            <span><i class="fa-solid fa-diagram-project"></i> N8N</span>
+        </div>
+    </div>
+</section>
         <section id="contato">
             <div class="container">
                 <h2>Vamos Conversar?</h2>
