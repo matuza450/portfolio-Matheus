@@ -625,3 +625,11 @@ footer {
     margin-bottom: 1.5rem;
     text-align: center;
 }
+
+/* ADICIONE ISTO AO FINAL DO SEU CSS */
+
+/* --- AJUSTE PARA TORNAR OS CARTÕES DE SERVIÇO CLICÁVEIS --- */
+.service-card-link {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit;        /* Faz o texto herdar a cor normal */
+}
