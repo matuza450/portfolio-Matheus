@@ -33,3 +33,29 @@ if (headline) {
         // Por enquanto, a animação só roda uma vez ao carregar
     });
 }
+
+// ADICIONE ESTA NOVA FUNÇÃO AO SEU SCRIPT.JS
+
+function openSkillTab(evt, tabName) {
+    const tabContents = document.querySelectorAll(".skill-tab-content");
+    tabContents.forEach(content => {
+        content.style.display = "none";
+        content.classList.remove('active');
+    });
+
+    const tabLinks = document.querySelectorAll(".skill-tab-link");
+    tabLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    document.getElementById(tabName).style.display = "block";
+    document.getElementById(tabName).classList.add('active');
+    evt.currentTarget.classList.add('active');
+}
+
+// Garante que a primeira aba de habilidades esteja visível
+document.addEventListener("DOMContentLoaded", function() {
+    if (document.getElementById("desenvolvimento")) {
+        document.getElementById("desenvolvimento").style.display = "block";
+    }
+});
