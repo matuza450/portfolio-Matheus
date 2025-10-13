@@ -169,6 +169,17 @@ section .subtitle {
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 300;
+    
+    /* Linhas adicionadas para alinhar o ícone e o texto */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* Espaço entre o ícone e o texto */
+    transition: transform 0.2s ease;
+}
+
+
+.skills-list span:hover {
+    transform: translateY(-3px);
 }
 
 /* --- SEÇÃO DE CONTATO --- */
