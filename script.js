@@ -34,28 +34,34 @@ if (headline) {
     });
 }
 
-// ADICIONE ESTA NOVA FUNÇÃO AO SEU SCRIPT.JS
 
+// SUBSTITUA A FUNÇÃO ANTIGA POR ESTA
 function openSkillTab(evt, tabName) {
-    const tabContents = document.querySelectorAll(".skill-tab-content");
+    const tabContents = document.querySelectorAll("#habilidades .skill-tab-content");
     tabContents.forEach(content => {
-        content.style.display = "none";
         content.classList.remove('active');
     });
 
-    const tabLinks = document.querySelectorAll(".skill-tab-link");
+    const tabLinks = document.querySelectorAll("#habilidades .skill-tab-link");
     tabLinks.forEach(link => {
         link.classList.remove('active');
     });
 
-    document.getElementById(tabName).style.display = "block";
     document.getElementById(tabName).classList.add('active');
     evt.currentTarget.classList.add('active');
 }
 
-// Garante que a primeira aba de habilidades esteja visível
+// APAGUE OS DOIS BLOCOS "DOMContentLoaded" ANTIGOS E ADICIONE ESTE
 document.addEventListener("DOMContentLoaded", function() {
-    if (document.getElementById("desenvolvimento")) {
-        document.getElementById("desenvolvimento").style.display = "block";
+    // Garante que a primeira aba de projetos esteja ativa
+    const webTab = document.getElementById("web");
+    if (webTab) {
+        webTab.classList.add('active');
+    }
+
+    // Garante que a primeira aba de habilidades esteja ativa
+    const devTab = document.getElementById("desenvolvimento");
+    if (devTab) {
+        devTab.classList.add('active');
     }
 });
