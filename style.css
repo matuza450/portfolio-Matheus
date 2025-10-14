@@ -766,9 +766,9 @@ footer {
 .modal-content {
     position: relative;
     background-color: var(--card-bg-color);
-    padding: 2.5rem;
+    padding: 2rem; /* Reduz o padding interno */
     border-radius: 12px;
-    max-width: 600px;
+    max-width: 500px; /* << PRINCIPAL ALTERAÇÃO: Diminui a largura máxima */
     width: 90%;
     z-index: 2001;
     text-align: left;
@@ -776,14 +776,15 @@ footer {
     animation: fadeInModal 0.4s ease-out;
 }
 
+
 .modal-content img {
-    width: 100%;
+    width: 60%;
     border-radius: 8px;
     margin-bottom: 1.5rem;
 }
 
 .modal-content h2 {
-    font-size: 1.8rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     color: var(--primary-text-color);
 }
@@ -795,19 +796,22 @@ footer {
 
 .modal-close-btn {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
+    top: 0.5rem;  /* << AJUSTADO */
+    right: 0.75rem; /* << AJUSTADO */
+    background: transparent; /* << Garante fundo transparente */
     border: none;
-    font-size: 2rem;
+    font-size: 2.5rem; /* << Aumenta o tamanho do 'X' */
+    font-weight: 300; /* << Deixa o 'X' mais fino e elegante */
     color: var(--secondary-text-color);
     cursor: pointer;
     line-height: 1;
-    transition: color 0.3s ease;
+    padding: 0; /* Remove padding extra */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .modal-close-btn:hover {
     color: var(--primary-text-color);
+    transform: scale(1.1); /* Efeito de zoom sutil no hover */
 }
 
 @keyframes fadeInModal {
