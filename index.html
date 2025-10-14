@@ -22,35 +22,35 @@
 
 <body>
 
-<header>
-    <div class="container">
-        <h1 class="logo"><span class="logo-initials">MH</span> Matheus Henrique</h1>
+    <header>
+        <div class="container">
+            <h1 class="logo"><span class="logo-initials">MH</span> Matheus Henrique</h1>
 
-        <nav class="nav-desktop">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-            </ul>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                </ul>
+            </nav>
+
+            <button id="menu-btn" class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <nav id="mobile-nav" class="nav-mobile">
+            <a href="#sobre" class="mobile-link">Sobre</a>
+            <a href="#projetos" class="mobile-link">Projetos</a>
+            <a href="#formacao" class="mobile-link">Formação</a>
+            <a href="#habilidades" class="mobile-link">Habilidades</a>
+            <a href="#contato" class="mobile-link">Contato</a>
+            <a href="servicos" class="mobile-link">Serviços</a>
         </nav>
-
-        <button id="menu-btn" class="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </div>
-
-    <nav id="mobile-nav" class="nav-mobile">
-        <a href="#sobre" class="mobile-link">Sobre</a>
-        <a href="#projetos" class="mobile-link">Projetos</a>
-        <a href="#formacao" class="mobile-link">Formação</a>
-        <a href="#habilidades" class="mobile-link">Habilidades</a>
-        <a href="#contato" class="mobile-link">Contato</a>
-        <a href="servicos" class="mobile-link">Serviços</a>
-    </nav>
-</header>
+    </header>
 
     <main>
         <section id="sobre">
@@ -103,24 +103,36 @@
                         <div class="project-card">
                             <img src="midia/TurboAPK.png" alt="Logo TurboAPK">
                             <h3>Logo para Empresa TurboAPK</h3>
-                            <p>Criação de identidade visual para uma comunidade de compartilhamento de aplicativos Mobile.</p>
+                            <p>Criação de identidade visual para uma comunidade de compartilhamento de aplicativos
+                                Mobile.</p>
                             <div class="project-links">
-                                <a href="#" target="_blank">Ver Detalhes</a>
+                                <button class="details-button" data-modal-target="#modal-turboapk">Ver Detalhes</button>
                             </div>
                         </div>
                         <div class="project-card">
-                            <video autoplay loop muted playsinline
-                                src="https://placehold.co/600x400/000000/FFFFFF/mp4?text=Animação+Exemplo">
-                                Seu navegador não suporta o elemento do vídeo.
-                            </video>
-                            <h3>Vídeo Promocional</h3>
-                            <p>Animação criada para a campanha de marketing de um produto digital.</p>
+                            <img src="midia/Subindo no Corte.png" alt="Logo Subindo no Corte">
+                            <h3>Logo para Barbearia</h3>
+                            <p>Identidade visual para a barbearia "Subindo no Corte", com foco em um estilo clássico e
+                                elegante.</p>
                             <div class="project-links">
-                                <a href="#" target="_blank">Assistir no YouTube</a>
+                                <button class="details-button" data-modal-target="#modal-subindo-corte">Ver
+                                    Detalhes</button>
                             </div>
                         </div>
                     </div>
+                    <div class="project-card">
+                        <video autoplay loop muted playsinline
+                            src="https://placehold.co/600x400/000000/FFFFFF/mp4?text=Animação+Exemplo">
+                            Seu navegador não suporta o elemento do vídeo.
+                        </video>
+                        <h3>Vídeo Promocional</h3>
+                        <p>Animação criada para a campanha de marketing de um produto digital.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">Assistir no YouTube</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section id="formacao">
@@ -241,54 +253,57 @@
             </div>
         </section>
 
-       <section id="servicos">
-    <div class="container">
-        <h2>Serviços Disponíveis</h2>
-        <div class="services-grid">
+        <section id="servicos">
+            <div class="container">
+                <h2>Serviços Disponíveis</h2>
+                <div class="services-grid">
 
-            <a href="#contato" class="service-card-link">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Criação de sites e aplicações web responsivas, modernas e otimizadas para performance.</p>
-                </div>
-            </a>
+                    <a href="#contato" class="service-card-link">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3>Desenvolvimento Web</h3>
+                            <p>Criação de sites e aplicações web responsivas, modernas e otimizadas para performance.
+                            </p>
+                        </div>
+                    </a>
 
-            <a href="#contato" class="service-card-link">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-pen-ruler"></i>
-                    </div>
-                    <h3>Design Gráfico</h3>
-                    <p>Criação de logotipos, banners, flyers e materiais promocionais que fortalecem sua marca.</p>
-                </div>
-            </a>
+                    <a href="#contato" class="service-card-link">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-pen-ruler"></i>
+                            </div>
+                            <h3>Design Gráfico</h3>
+                            <p>Criação de logotipos, banners, flyers e materiais promocionais que fortalecem sua marca.
+                            </p>
+                        </div>
+                    </a>
 
-            <a href="#contato" class="service-card-link">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-clapperboard"></i>
-                    </div>
-                    <h3>Edição de Vídeo</h3>
-                    <p>Edição e pós-produção de vídeos para YouTube, redes sociais, cursos e apresentações.</p>
-                </div>
-            </a>
-            
-            <a href="#contato" class="service-card-link">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                    </div>
-                    <h3>Serviços Freelancer</h3>
-                    <p>Serviços de criação, otimização e atendimento de alta qualidade para transformar suas ideias em realidade digital.</p>
-                </div>
-            </a>
+                    <a href="#contato" class="service-card-link">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-clapperboard"></i>
+                            </div>
+                            <h3>Edição de Vídeo</h3>
+                            <p>Edição e pós-produção de vídeos para YouTube, redes sociais, cursos e apresentações.</p>
+                        </div>
+                    </a>
 
-        </div>
-    </div>
-</section>
+                    <a href="#contato" class="service-card-link">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <h3>Serviços Freelancer</h3>
+                            <p>Serviços de criação, otimização e atendimento de alta qualidade para transformar suas
+                                ideias em realidade digital.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
 
         <section id="contato">
             <div class="container">
@@ -313,6 +328,33 @@
             </div>
         </section>
     </main>
+
+    </main> <div class="modal" id="modal-turboapk">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <button class="modal-close-btn">&times;</button>
+        <img src="midia/TurboAPK.png" alt="Logo TurboAPK">
+        <h2>Logo para Empresa TurboAPK</h2>
+        <p>
+            Este projeto envolveu a criação de uma identidade visual completa para a "TurboAPK", uma comunidade online focada no compartilhamento e discussão de aplicativos para dispositivos móveis. O conceito buscou unir a ideia de velocidade (foguete) com o universo Android, resultando em um logo moderno, memorável e de fácil aplicação em diversas mídias.
+        </p>
+    </div>
+</div>
+
+<div class="modal" id="modal-subindo-corte">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <button class="modal-close-btn">&times;</button>
+        <img src="midia/Subindo no Corte.png" alt="Logo Subindo no Corte">
+        <h2>Logo para Barbearia "Subindo no Corte"</h2>
+        <p>
+            Desenvolvimento de logotipo para uma barbearia com um conceito clássico e sofisticado. A composição utiliza elementos tradicionais da barbearia, como a tesoura e a navalha, integrados à inicial "S" do nome "Subindo no Corte". A paleta de cores dourada sobre fundo escuro reforça a percepção de um serviço premium e de alta qualidade.
+        </p>
+    </div>
+</div>
+
+<footer>
+    ```
 
     <footer>
         <div class="container">
