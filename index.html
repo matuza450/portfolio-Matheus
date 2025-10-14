@@ -22,20 +22,33 @@
 
 <body>
 
-    <header>
-        <div class="container">
-            <h1 class="logo"><span class="logo-initials">MH</span> Matheus Henrique</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#formacao">Formação</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header>
+    <div class="container">
+        <h1 class="logo"><span class="logo-initials">MH</span> Matheus Henrique</h1>
+
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <button id="menu-btn" class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+    <nav id="mobile-nav" class="nav-mobile">
+        <a href="#sobre" class="mobile-link">Sobre</a>
+        <a href="#projetos" class="mobile-link">Projetos</a>
+        <a href="#formacao" class="mobile-link">Formação</a>
+        <a href="#habilidades" class="mobile-link">Habilidades</a>
+        <a href="#contato" class="mobile-link">Contato</a>
+    </nav>
+</header>
 
     <main>
         <section id="sobre">

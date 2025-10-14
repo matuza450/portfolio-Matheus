@@ -441,12 +441,13 @@ footer {
 }
 
 /* Efeito de cursor piscando para o título */
+/* Substitua o #headline original por este */
 #headline {
     border-right: 3px solid var(--accent-color);
     white-space: nowrap;
     overflow: hidden;
     animation: 
-        typing 3s steps(30, end),
+        typing 3.5s steps(35, end) forwards,  /* CORRIGIDO! */
         blink-caret .75s step-end infinite;
 }
 
@@ -632,4 +633,91 @@ footer {
 .service-card-link {
     text-decoration: none; /* Remove o sublinhado do link */
     color: inherit;        /* Faz o texto herdar a cor normal */
+}
+
+/* --- ESTILOS PARA O MENU HAMBÚRGUER E NAVEGAÇÃO MÓVEL --- */
+
+/* Esconde o botão de menu em telas grandes */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Esconde a navegação móvel por padrão */
+.nav-mobile {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #1E1E1E; /* Cor de fundo para o menu aberto */
+    padding: 1rem 0;
+}
+
+.nav-mobile a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-mobile a:hover {
+    background-color: #2a2a2a;
+    color: var(--accent-color);
+}
+
+/* --- ATUALIZAÇÃO DA SEÇÃO DE RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: row; /* Mantém logo e botão na mesma linha */
+        justify-content: space-between; /* Espaça eles */
+        width: 100%;
+    }
+
+    /* Esconde o menu de desktop e mostra o botão de menu */
+    .nav-desktop {
+        display: none;
+    }
+    .menu-toggle {
+        display: block; /* Mostra o botão em telas pequenas */
+    }
+
+    /* Quando o menu estiver aberto (classe 'active'), mostra o nav-mobile */
+    .nav-mobile.active {
+        display: flex;
+    }
+    
+    main {
+        padding-top: 80px; /* Reduz o padding-top de volta, já que o header não cresce mais tanto */
+    }
+
+    section {
+        padding: 3rem 1rem; /* Reduz o padding lateral para mais espaço */
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    #sobre h2 {
+        font-size: 2.2rem; /* Ajusta o título principal */
+    }
+
+    .contact-box {
+        padding: 2rem 1.5rem; /* Menos padding na caixa de contato */
+    }
+
+    .skills-tabs-container, .tabs-container {
+        flex-wrap: wrap; /* Permite que os botões da aba quebrem a linha */
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .skill-tab-link, .tab-link {
+        font-size: 0.9rem; /* Diminui a fonte das abas */
+        padding: 0.5rem 1rem;
+    }
 }

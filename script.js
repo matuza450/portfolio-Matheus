@@ -44,3 +44,36 @@ document.addEventListener("DOMContentLoaded", function() {
         devTab.classList.add('active');
     }
 });
+
+
+// --- CONTROLE DO MENU HAMBÚRGUER ---
+document.addEventListener("DOMContentLoaded", function() {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    // Função para abrir/fechar o menu
+    menuBtn.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
+        // Muda o ícone de barras para 'X' e vice-versa
+        const icon = menuBtn.querySelector('i');
+        if (mobileNav.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-xmark');
+        } else {
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    // Função para fechar o menu ao clicar em um link
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+            // Restaura o ícone para barras
+            const icon = menuBtn.querySelector('i');
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        });
+    });
+});
