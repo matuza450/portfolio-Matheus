@@ -77,9 +77,12 @@
 
                 <div class="tabs-container">
                     <button class="tab-link active" onclick="openTab(event, 'web')">Projetos Web</button>
+                    <button class="tab-link" onclick="openTab(event, 'estudos')">Estudos e Outros Projetos</button>
                     <button class="tab-link" onclick="openTab(event, 'design')">Projetos de Design</button>
                 </div>
 
+
+                <!-- PARTE DO DESENVOLVIMENTO WEB -->
                 <div id="web" class="tab-content active">
                     <div class="projects-grid">
 
@@ -109,50 +112,75 @@
                     </div>
                 </div>
 
-
-                <!-- PARTE DE DESIGNER E ETC -->
-                <div id="design" class="tab-content">
+                <div id="estudos" class="tab-content">
                     <div class="projects-grid">
+
                         <div class="project-card">
-                            <img src="midia/TurboAPK.png" alt="Logo TurboAPK">
-                            <h3>Logo para Empresa TurboAPK</h3>
-                            <p>Criação de identidade visual para uma comunidade de compartilhamento de aplicativos
-                                Mobile.</p>
+                            <img src="https://placehold.co/600x400/1E1E1E/00FF6A?text=Projeto+em+C"
+                                alt="Calculadora Fiscal em C">
+                            <h3>Calculadora Fiscal em C</h3>
+                            <p>Estudo de caso em Linguagem C para aplicar conceito de variáveis, constantes e operações
+                                aritméticos em um cenário de cáculo de impostos de descontos </p>
                             <div class="project-links">
-                                <button class="details-button" data-modal-target="#modal-turboapk">Ver Detalhes</button>
+                                <a href="https://github.com/matuza450/projetos-em-c/blob/main/CalculadoraFiscal.c"
+                                    target="_blank">Ver Código no GitHub</a>
                             </div>
                         </div>
+
                         <div class="project-card">
-                            <img src="midia/Subindo no Corte.png" alt="Logo Subindo no Corte">
-                            <h3>Logo para Barbearia</h3>
-                            <p>Identidade visual para a barbearia "Subindo no Corte", com foco em um estilo clássico e
-                                elegante.</p>
-                            <div class="project-links">
-                                <button class="details-button" data-modal-target="#modal-subindo-corte">Ver
-                                    Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="midia/tumbnail.png" alt="Thumnail de Gameplay">
-                            <h3>Thumbnail de Gameplay</h3>
-                            <p>Thumbnail para meu canal no Youtube, onde eu gravo diversas gameplays por pura paixão e
-                                Hobby. </p>
-                            <div class="project-links">
-                                <button class="details-button" data-modal-target="#modal-thumbnail">Ver
-                                    Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="midia/MTZ Tech.png" alt="Logo MTZ Tech">
-                            <h3>Logo da MTZ Tech</h3>
-                            <p>Logo feita pra um projeto pessoal na rede Tiktok, onde eu falo tudo sobre tecnologia,
-                                CiberSec e inovação no meio Tech. </p>
-                            <div class="project-links">
-                                <button class="details-button" data-modal-target="#modal-mtztech">Ver Detalhes</button>
-                            </div>
+                            <img src="https://placehold.co/600x400/1E1E1E/00FF6A?text=Projeto+em+C"
+                                alt="Vericador Numerico em C">
+                            <h3>Verificador Numérico em C</h3>
+                            <p>Um programa de console em Linguagem C que demonstra conceitos fundamentais de programação. Ele recebe três números e aplica operadores aritméticos, relacionais e lógicos, além de usar estruturas condicionais (if-else) para verificar e exibir os resultados.</p>
                         </div>
                     </div>
                 </div>
+            </div>
+
+
+            <!-- PARTE DE DESIGNER E ETC -->
+            <div id="design" class="tab-content">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="midia/TurboAPK.png" alt="Logo TurboAPK">
+                        <h3>Logo para Empresa TurboAPK</h3>
+                        <p>Criação de identidade visual para uma comunidade de compartilhamento de aplicativos
+                            Mobile.</p>
+                        <div class="project-links">
+                            <button class="details-button" data-modal-target="#modal-turboapk">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="midia/Subindo no Corte.png" alt="Logo Subindo no Corte">
+                        <h3>Logo para Barbearia</h3>
+                        <p>Identidade visual para a barbearia "Subindo no Corte", com foco em um estilo clássico e
+                            elegante.</p>
+                        <div class="project-links">
+                            <button class="details-button" data-modal-target="#modal-subindo-corte">Ver
+                                Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="midia/tumbnail.png" alt="Thumnail de Gameplay">
+                        <h3>Thumbnail de Gameplay</h3>
+                        <p>Thumbnail para meu canal no Youtube, onde eu gravo diversas gameplays por pura paixão e
+                            Hobby. </p>
+                        <div class="project-links">
+                            <button class="details-button" data-modal-target="#modal-thumbnail">Ver
+                                Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="midia/MTZ Tech.png" alt="Logo MTZ Tech">
+                        <h3>Logo da MTZ Tech</h3>
+                        <p>Logo feita pra um projeto pessoal na rede Tiktok, onde eu falo tudo sobre tecnologia,
+                            CiberSec e inovação no meio Tech. </p>
+                        <div class="project-links">
+                            <button class="details-button" data-modal-target="#modal-mtztech">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
             </div>
         </section>
@@ -188,7 +216,7 @@
                         <div class="education-header">
                             <h3>Técnico em Desenvolvimento de Sistemas</h3>
                             <p class="institucao"><i class="fa-solid fa-graduation-cap"></i> Instituto Federal de
-                                Brasília</p>
+                                Brasília</p><br>
                         </div>
                         <div class="education-details">
                             <p><strong>Status:</strong> Cursando - 1° de 3° semestres</p>
@@ -203,6 +231,31 @@
                             </div>
                             <div class="progress-bar">
                                 <div class="progress" style="width: 33%;"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="education-grind">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <h3>Certificado Profissinal Análise de dados do Google</h3>
+                                <p class="institucao"><i class="fa-solid fa-graduation-cap"> Google | Coursera</i></p>
+                                <br>
+                            </div>
+                            <div class="education-details">
+                                <p><strong>Status:</strong> Cursando</p>
+                                <p><strong>Previsão de Conclusão:</strong> Fevereiro/2026</p>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar-label">
+                                    <span>Progresso do Curso</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -221,6 +274,7 @@
                     <button class="skill-tab-link" onclick="openSkillTab(event, 'design-habilidades')">
                         <i class="fa-solid fa-pen-ruler"></i> Designer & Editor de Vídeo
                     </button>
+
                 </div>
 
                 <div id="desenvolvimento" class="skill-tab-content active">
