@@ -120,3 +120,28 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// Adicione este código ao final do seu arquivo script.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Verifica se o elemento existe antes de iniciar
+    if (document.querySelector('.typing-target')) {
+        const options = {
+            strings: [
+                'Matheus Henrique',
+                'Desenvolvedor Web',
+                'Designer',
+                'Pentester'
+            ],
+            typeSpeed: 20,      // Velocidade de digitação
+            backSpeed: 25,      // Velocidade ao apagar
+            backDelay: 2000,    // Tempo de espera antes de apagar
+            startDelay: 500,    // Tempo de espera antes de começar
+            loop: true,         // Faz a animação repetir
+            showCursor: true,
+            cursorChar: '|',
+        };
+
+        new Typed('.typing-target', options);
+    }
+});
