@@ -816,3 +816,29 @@ footer {
         transform: scale(1);
     }
 }
+
+/* --- ESTILOS PARA AS TAGS DE TECNOLOGIA NOS PROJETOS --- */
+
+.project-tech-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as tags quebrem a linha se não couberem */
+    gap: 0.5rem; /* Espaço entre as tags */
+    padding: 0 1.5rem 1.5rem; /* Alinha com os links acima */
+    margin-top: 1rem; /* Adiciona um espaço acima, separando dos links */
+}
+
+.project-tech-list span {
+    background-color: #2a2a2a; /* Um cinza escuro sutil */
+    color: var(--secondary-text-color); /* Cor de texto secundária */
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px; /* Deixa os balões bem arredondados */
+    font-size: 0.8rem; /* Fonte pequena e discreta */
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem; /* Espaço entre o ícone e o texto */
+}
+
+.project-tech-list span i {
+    font-size: 0.9rem; /* Tamanho do ícone */
+}
